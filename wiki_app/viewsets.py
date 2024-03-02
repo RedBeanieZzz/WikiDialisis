@@ -1,7 +1,7 @@
 from rest_framework import viewsets, permissions
 
-from serializers import ServicioSerializer
-from models import Servicio
+from .serializers import ServicioSerializer
+from .models import Servicio
 
 #Only for Servicio model, need it on the content site
 

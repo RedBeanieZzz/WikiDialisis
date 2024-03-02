@@ -1,6 +1,6 @@
 from rest_framework import routers
 
-from viewsets import ServicioViewSet
+from .viewsets import ServicioViewSet
 
 router = routers.SimpleRouter()
 

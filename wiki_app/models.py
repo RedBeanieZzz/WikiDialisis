@@ -1,5 +1,7 @@
 from django.db import models
 
+#modeling content tables
+
 #Country model.
 class Pais(models.Model):
     id = models.AutoField(primary_key = True)

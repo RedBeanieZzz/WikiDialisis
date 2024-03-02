@@ -2,8 +2,8 @@ from rest_framework import routers
 
 from .viewsets import ServicioViewSet
 
-router = routers.SimpleRouter()
+router = routers.DefaultRouter()
 
-router.register(r'servicio', ServicioViewSet, basename = 'servicio') #Register Servicio model
+router.register(r'servicio', ServicioViewSet, basename='servicio') #Register Servicio model
 
 urlpatterns = router.urls

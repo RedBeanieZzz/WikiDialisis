@@ -7,4 +7,5 @@ class ServicioSerializer (serializers.ModelSerializer):
 
     class Meta:
         model = Servicio
-        read_only_fields = '__all__'
+        fields = '__all__'
+        

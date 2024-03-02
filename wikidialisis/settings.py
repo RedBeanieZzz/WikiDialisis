@@ -31,31 +31,33 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework', #third apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
     'wiki_app.apps.WikiAppConfig', #OUR APP
-    'rest_framework', #REST FRAMEWORK
-    'corsheaders' #CORS HEADERS FOR API CALL
+    
+    'corsheaders', #CORS HEADERS FOR API CALL
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMidddleware', 
+    'django.middleware.common.CommonMiddleware',
+    'corsheaders.middleware.CorsMiddleware', 
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = [
+CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
-    'http://127.0.0.1:8000/'
+    'http://127.0.0.1:8000',
 ]
 
 ROOT_URLCONF = 'wikidialisis.urls'

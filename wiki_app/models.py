@@ -40,7 +40,7 @@ class Servicio(models.Model):
     direccion = models.CharField(max_length = 50, blank = False)
     telefono = models.IntegerField(blank = False)
     mail = models.EmailField(max_length = 254)
-    pagina_web = models.URLField(max_length = 254)
+    pagina_web = models.URLField(max_length = 254, blank = True)
     referente = models.CharField(max_length = 50)
 
     def __str__(self):

@@ -25,28 +25,26 @@ SECRET_KEY = 'django-insecure-n%bds0hodp2g&dv_bcs!xvzecmzjg*qxvkb7k9iw9^^y&j#sl#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [] #por ahora queda así, chequear hosts allowed
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'rest_framework', #third apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
     'wiki_app.apps.WikiAppConfig', #OUR APP
-    
-    'corsheaders', #CORS HEADERS FOR API CALL
+    'rest_framework', #third apps
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
-    'django.middleware.common.CommonMiddleware',
     'corsheaders.middleware.CorsMiddleware', 
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -55,10 +53,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+#chequear allowed origins, ver si puedo crear una whitelist.
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://127.0.0.1:8000",
+ 	"http://localhost:5173",
+	"http://127.0.0.1:8000",
 ]
+CORS_ALLOW_CREDENTIALS = True
 
 ROOT_URLCONF = 'wikidialisis.urls'
 

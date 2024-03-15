@@ -38,7 +38,7 @@ class Servicio(models.Model):
     provincia = models.ForeignKey(Provincia, on_delete = models.CASCADE)
     ciudad = models.CharField(max_length = 60, blank = False)
     direccion = models.CharField(max_length = 50, blank = False)
-    telefono = models.IntegerField(blank = False)
+    telefono = models.CharField(max_length=12, blank = False, ) #charfieed bc only admin will post info
     mail = models.EmailField(max_length = 254)
     pagina_web = models.URLField(max_length = 254, blank = True)
     referente = models.CharField(max_length = 50)

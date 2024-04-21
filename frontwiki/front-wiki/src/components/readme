@@ -1,0 +1,7 @@
+aca en componentes van las partes que hagan a la pagina principal, ya sean:
+	- Botones de redes sociales.
+	- Barra de búsqueda
+	- botones que llevan a otras paginas
+
+DISEÑAR LA PAGINA en una carpeta "landing", ahi está la pagina main que se llama en #App.
+	todas las otras paginas con info se arman en components los componentes 

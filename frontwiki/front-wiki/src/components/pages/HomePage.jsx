@@ -1,7 +1,10 @@
-import React from "react";
+import React from 'react'
+import MainNavBar from '../navbar/NavBar.jsx'
 
-export default function GeneralPage () {
+export default function GeneralPage() {
 	return (
-		<div>hola, aca va la seg pagina</div>
+		<div>
+			<MainNavBar />
+		</div>
 	)
 }

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function Landing() {
 	return (
-		<div className="landing">
+		<div className="landing" >
 			<div className="lg">
 				<img className='img-1' src="./src/imgs/riñon.png" alt="Logo" />
 			</div>

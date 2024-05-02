@@ -1,26 +1,42 @@
-.navbar{
+.navbar {
     margin: 0 auto;
-    height: 20%;
+    height: 15%;
     display: flex;
     flex-direction: row;
-    background-color: #f0f0f0;
-    
+
+    background-image: linear-gradient(#9090f5, #4848c7);
 }
 
-.logo{
-    height: 10vh;
+.logo {
+    margin: 10px;
+    display: block;
+    align-items: center;
+    height: 20%;
     width: 20%;
+    border-radius: 50%;
+    background-color: #9090f5;
 }
 
-.img-logo{
-    height: 15vh;
+.img-logo {
+    margin: 0;
+    height: 100%;
     width: 100%;
 }
 
-.title-nav{
-    font-size: 20px;
+.title-nav, .title-nav1, .title-nav2 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
 }
 
-.btn-menu{
-    width: 20px;
+.title-nav1{
+    color: #5cdb5c;
+}
+.title-nav2{
+    color: #fff;
 }

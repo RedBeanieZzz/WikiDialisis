@@ -1,0 +1,18 @@
+#MENU DROPDOWN QUE AFECTA AL PADDING Y AGRANDA EL ESPACIO.
+#UTIL PARA MOSTRAR LA INFO DE SERVICIOS.
+
+const [isOpen, setIsOpen] = useState() //dropdown menu
+
+    return (
+        <div>
+            <div className="menu" onClick={() => setIsOpen(!isOpen)} >
+                {isOpen && (
+                    <ul>
+                        <li>Ver Blog</li>
+                        <li>¡Quiero opinar!</li>
+                        <li>¿Como usar la pagina?</li>
+                    </ul>
+                )}
+            </div>
+        </div>
+    )

@@ -16,7 +16,7 @@ export default function MainNavBar() {
 				<p className='title-nav1'>Wiki</p>
 				<p className='title-nav2'>Dialisis</p>
 			</div>
-				<Menu />
+			<Menu />
 		</div>
 	)
 }

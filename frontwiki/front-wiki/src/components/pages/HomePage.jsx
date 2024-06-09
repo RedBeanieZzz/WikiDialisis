@@ -3,10 +3,13 @@ import MainNavBar from '../navbar/NavBar.jsx'
 import SectionsButton from '../buttons/ToSectionBtn.jsx'
 import { Link } from 'react-router-dom'
 
-export default function GeneralPage () {
+export default function GeneralPage() {
   return (
     <div className='home'>
       <MainNavBar />
+
+      <h3 className='desc'>Tocá las opciones o deslizá para arriba para ver mas!</h3>
+
       <Link style={{ textDecoration: 'none' }} to='info-dial'>
         <SectionsButton text='¿Que es la dialisis?' />
       </Link>

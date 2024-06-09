@@ -1,2 +1,10 @@
-		//  <Buttons/> pero cada uno tiene que llevarme a donde yo le pido, 
-		// es decir: crear el button, pero linkearlo a cada page que yo desee acá
+import React from 'react'
+import '../pages/HomePage.css'
+
+export default function SectionsButton (props) {
+  return (
+    <div className='container-btn'>
+      <div className='section-title'>{props.text}</div>
+    </div>
+  )
+}

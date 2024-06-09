@@ -23,7 +23,9 @@
     width: 100%;
 }
 
-.title-nav, .title-nav1, .title-nav2 {
+.title-nav,
+.title-nav1,
+.title-nav2 {
     margin: 0;
     display: flex;
     align-items: center;
@@ -34,9 +36,45 @@
     font-size: 40px;
 }
 
-.title-nav1{
+.title-nav1 {
     color: #5cdb5c;
 }
-.title-nav2{
+
+.title-nav2 {
     color: #fff;
+}
+
+
+/* LA IDEA DEL COMPONENTE MENU ES QUE AL ACTIVARLO, 
+OCUPE TODA LA PANTALLA CON LAS OPCIONES (EN TELEFONO, EN PC SOLO SIDEBAR)*/
+
+.menu-nav {
+    position: absolute;
+    text-align: end;
+    top: 2rem;
+    right: 1rem;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #000;
+}
+
+/* editar aca el contenido del menu */
+.div-nav {
+    text-align: right;
+    margin: 0;
+    padding: 5px;
+    border-radius: 5px;
+    list-style-type: none;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    background-color: #f0f0f0;
+}
+
+
+/* editar aca el li */
+
+/* .li-nav{} */
+
+.li-nav:hover {
+    text-decoration: underline;
 }

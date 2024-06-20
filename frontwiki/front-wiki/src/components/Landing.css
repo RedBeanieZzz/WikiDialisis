@@ -26,7 +26,7 @@
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-	font-size: 52px;
+	font-size: 64px;
 
 }
 
@@ -42,12 +42,12 @@
   margin: 5% auto;
 	justify-content: center;
 	align-items: flex-start;
-	padding-inline: 40px;
+	padding-inline: 0px;
 	color: #fff;
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-	font-size: 16px;
+	font-size: 20px;
 }
 
 .btn {
@@ -59,15 +59,9 @@
   font-weight: 700;
   font-style: normal;
   font-size: 30px;
-  padding: 4px 40px;
+  padding: 6px 40px;
   border: none;
-  border-radius: 30px;
+  border-radius: 20px;
   box-shadow: #333333 0px 20px 30px -10px;
   background-color: #5cdb5c;
-}
-
-.btn-in:active{
-  cursor: pointer;
-  transform: translateY(2px);
-  transition-duration: 10ms;
 }

@@ -8,7 +8,7 @@ export default function GeneralPage() {
     <div className='home'>
       <MainNavBar />
 
-      <h3 className='desc'>Tocá las opciones o deslizá para arriba para ver mas!</h3>
+      <h3 className='desc-1 sb1'>Tocá las opciones o deslizá hacia arriba para ver mas!</h3>
 
       <Link style={{ textDecoration: 'none' }} to='info-dial'>
         <SectionsButton text='¿Que es la dialisis?' />
@@ -37,9 +37,9 @@ export default function GeneralPage() {
       <Link style={{ textDecoration: 'none' }} to='alojamientos'>
         <SectionsButton text='Alojamiento' />
       </Link>
-      {/* <Link>
+      <Link style={{ textDecoration: 'none' }}>
         <SectionsButton text='Conversatorio / Blog' />
-      </Link> */}
+      </Link>
     </div>
   )
 }
